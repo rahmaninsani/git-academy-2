@@ -9,3 +9,10 @@ func TestHello(t *testing.T) {
 		panic("Expected 'Hello Bob', got " + result)
 	}
 }
+
+func TestLogin(t *testing.T) {
+	result := Login("bob", "bob")
+	if !result {
+		panic("Invalid Login")
+	}
+}
